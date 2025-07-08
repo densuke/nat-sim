@@ -4,7 +4,7 @@
 
 なお、NATテーブルエントリは通常300秒以上のTTLのようですが、シミュレーションのためにTTLを30秒に設定しています。これにより、エントリの追加や削除の動作を短時間で確認できます。
 
-[![asciicast](https://asciinema.org/a/akIaiJCttzErzzHgLAJgncESy.svg)](https://asciinema.org/a/akIaiJCttzErzzHgLAJgncESy)
+<a href="https://asciinema.org/a/akIaiJCttzErzzHgLAJgncESy" target="_blank"><img src="https://asciinema.org/a/akIaiJCttzErzzHgLAJgncESy.svg" /></a>
 
 ## 想定するネットワーク構成
 
