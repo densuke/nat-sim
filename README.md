@@ -3,7 +3,9 @@
 これは、Network Address Translation (NAT) の動作をシミュレートするシンプルなTUI (Text-based User Interface) アプリケーションです。内部ネットワークからの通信がどのようにNATデバイスによって外部ネットワークへ変換され、そのエントリがどのように管理されるかを視覚的に確認できます。
 
 なお、NATテーブルエントリは通常300秒以上のTTLのようですが、シミュレーションのためにTTLを30秒に設定しています。これにより、エントリの追加や削除の動作を短時間で確認できます。
-<a href="https://asciinema.org/a/akIaiJCttzErzzHgLAJgncESy?autoplay=1" target="_blank"><img src="https://asciinema.org/a/akIaiJCttzErzzHgLAJgncESy.svg" /></a>
+
+<script src="https://asciinema.org/a/bJMOlPe5F4mFLY0Rl6fiJSOp3.js?autoplay=1" id="asciicast-bJMOlPe5F4mFLY0Rl6fiJSOp3" async></script>
+
 
 ## 想定するネットワーク構成
 
