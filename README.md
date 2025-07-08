@@ -52,16 +52,17 @@ graph TD
 1.  **`uv` のインストール**:
     `uv` がインストールされていない場合は、[uvの公式サイト](https://docs.astral.sh/uv/) を参照してインストールしてください。
 
-2.  **プロジェクトの初期化と依存関係のインストール**:
+2.  **仮想環境と依存関係のセットアップ**
     プロジェクトのルートディレクトリで以下のコマンドを実行します。
 
     ```bash
-    uv init
-    uv add textual
+    uv venv
+    uv sync
     ```
 
-3.  **NATテーブルの初期化**:
+3.  **NATテーブルの初期化**(任意/必要に応じて):
     シミュレーターを初めて起動する前、またはNATテーブルをリセットしたい場合は、以下のコマンドを実行します。
+    なおこの操作をしなくても、NATテーブルは初回起動時に自動生成されます。
 
     ```bash
     uv run python main.py --init
@@ -90,6 +91,15 @@ graph TD
 *   **通知**: 画面右下には、新しいNATエントリの追加や期限切れエントリの削除に関する通知が表示されます。
 *   **ダークモードの切り替え**: `d` キーを押すと、ダークモードとライトモードを切り替えられます。
 *   **終了**: `q` キーを押すと、アプリケーションを終了します。
+* **コマンドパレット**: `Ctrl+P` を押すと、コマンドパレットが開きます。ここからダークモードの切り替えや終了などの操作が可能です。
+    * 個人的に終了はこの操作(`Ctrl+P` → `Quit`)が一番使いやすいと思います。
+
+# 開発環境
+
+- macOS Sequela(M4)
+- [Python](https://www.python.org/) 3.13.4
+- [uv](https://docs.astral.sh/uv/) 0.7.19
+- 開発の補助に[Gemini-cli](https://cloud.google.com/blog/ja/topics/developers-practitioners/introducing-gemini-cli)(8割flash)を使用しています、というかtextual周辺はほぼこいつにお任せです
 
 # ライセンス
 
@@ -97,7 +107,7 @@ graph TD
 
 このプロジェクトは [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html) のもとで公開されています。詳細は `LICENSE` ファイルをご覧ください。
 
-と思ったのですが、なぜか今www.gnu.orgに繋がらないので後ほど追加する予定です。
+と思ったのですが、なぜか今www.gnu.orgに繋がらないので後ほど追加する予定です。 -> [追加しました](./LICENSE)
 
 # お願い
 
