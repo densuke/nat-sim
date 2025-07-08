@@ -1,0 +1,39 @@
+Screen {
+    align: center middle;
+}
+
+Container {
+    width: 95%;
+    height: 80%;
+    border: solid $primary;
+    background: $surface;
+}
+
+Header {
+    dock: top;
+    background: $primary;
+    color: $text;
+}
+
+Footer {
+    dock: bottom;
+    background: $primary;
+    color: $text;
+}
+
+DataTable {
+    width: 1fr;
+    height: 1fr;
+    margin: 1;
+    border: round $secondary;
+}
+
+Input {
+    width: 1fr;
+    margin: 1;
+}
+
+Button {
+    width: auto;
+    margin: 1;
+}
